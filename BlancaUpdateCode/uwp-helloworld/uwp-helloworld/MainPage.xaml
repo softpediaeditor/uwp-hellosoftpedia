@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="uwp_helloworld.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:uwp_helloworld"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <TextBox x:Name="textbox1" Width="500" Header="Introduce a number from 1 to 5" PlaceholderText ="Type your number here" FontFamily="Verdana" FontSize="24" FontStyle="Italic" Grid.Row="0" Grid.ColumnSpan="3" HorizontalAlignment="Left" Margin = "190,200,0,0" VerticalAlignment="Top"/>
+        <Button Content="Introduce"  Width="200" FontFamily="Verdana" FontSize="24" FontStyle="Italic" Foreground="Green" Grid.Row ="1"  HorizontalAlignment="Right" VerticalAlignment="Top" Click="Introduce_Click"/>
+    </Grid>
+</Page>
